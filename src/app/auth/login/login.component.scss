@@ -1,0 +1,43 @@
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 16px;
+  background: #f4f4f4;
+}
+
+ion-card {
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+ion-card-header {
+  text-align: center;
+  background-color: #3880ff;
+  color: #fff;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+ion-card-title {
+  font-size: 1.5em;
+  margin: 16px 0;
+}
+
+ion-item {
+  margin-bottom: 16px;
+}
+
+ion-button {
+  margin-top: 24px;
+}
+
+.forgot-password {
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+  font-size: 0.9em;
+}

@@ -1,0 +1,27 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login-form">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Login</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item lines="none">
+        <ion-label position="floating">Username</ion-label>
+        <ion-input formControlName="username" clearInput></ion-input>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label position="floating">Password</ion-label>
+        <ion-input formControlName="password" type="password" clearInput></ion-input>
+      </ion-item>
+
+      <ion-button expand="block" type="submit" [disabled]="!loginForm.valid">
+        Login
+      </ion-button>
+
+      <ion-text color="medium" class="forgot-password">
+        <a href="#">Forgot your password?</a>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+</form>
